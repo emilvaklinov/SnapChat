@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4865B2312463118800AF1DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865B2302463118800AF1DA7 /* AppDelegate.swift */; };
 		4865B2332463118800AF1DA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865B2322463118800AF1DA7 /* SceneDelegate.swift */; };
-		4865B2352463118800AF1DA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865B2342463118800AF1DA7 /* ViewController.swift */; };
+		4865B2352463118800AF1DA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865B2342463118800AF1DA7 /* LoginViewController.swift */; };
 		4865B2382463118800AF1DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4865B2362463118800AF1DA7 /* Main.storyboard */; };
 		4865B23A2463118C00AF1DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4865B2392463118C00AF1DA7 /* Assets.xcassets */; };
 		4865B23D2463118C00AF1DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4865B23B2463118C00AF1DA7 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		4865B22D2463118800AF1DA7 /* SnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4865B2302463118800AF1DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4865B2322463118800AF1DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4865B2342463118800AF1DA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4865B2342463118800AF1DA7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4865B2372463118800AF1DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4865B2392463118C00AF1DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4865B23C2463118C00AF1DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,6 @@
 				3E184831E32540A34B076A3B /* Pods-SnapChat.debug.xcconfig */,
 				AC3A3652C424F617A3444876 /* Pods-SnapChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,7 +76,7 @@
 			children = (
 				4865B2302463118800AF1DA7 /* AppDelegate.swift */,
 				4865B2322463118800AF1DA7 /* SceneDelegate.swift */,
-				4865B2342463118800AF1DA7 /* ViewController.swift */,
+				4865B2342463118800AF1DA7 /* LoginViewController.swift */,
 				4865B2362463118800AF1DA7 /* Main.storyboard */,
 				4865B2392463118C00AF1DA7 /* Assets.xcassets */,
 				4865B23B2463118C00AF1DA7 /* LaunchScreen.storyboard */,
@@ -211,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4865B2352463118800AF1DA7 /* ViewController.swift in Sources */,
+				4865B2352463118800AF1DA7 /* LoginViewController.swift in Sources */,
 				4865B2312463118800AF1DA7 /* AppDelegate.swift in Sources */,
 				4865B2332463118800AF1DA7 /* SceneDelegate.swift in Sources */,
 			);
