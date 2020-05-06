@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -24,6 +25,41 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func topTapped(_ sender: Any) {
+        if let email = emailTextField.text {
+            if let password = passwordTextField.text {
+                if signupMode {
+                    //Sign up
+                    Auth.auth().createUser(withEmail: email, password: password, completion: {(user, error) in
+                        if let error = error {
+                            self.presentAlert(alert: error.localizedDescription)
+                        } else {
+                            print("Sign up was succesful")
+                        }
+                    })
+                }else{
+                    //Log in
+                    Auth.auth().signIn(withEmail: email, password: password, completion: {(user, error) in
+                        if let error = error {
+                            self.presentAlert(alert: error.localizedDescription)
+                        } else {
+                            print("Log in was succesful")
+                        }
+                        
+                    })
+                }
+            }
+        }
+        
+    }
+    
+    func presentAlert(alert: String) {
+        let aletVC = UIAlertController(title: "Error", message: alert, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
+            aletVC.dismiss(animated: true, completion: nil)
+        }
+        aletVC.addAction(okAction)
+        present(aletVC, animated: true, completion: nil)
+        
     }
     
     @IBAction func bottomTapped(_ sender: Any) {
@@ -34,8 +70,8 @@ class LoginViewController: UIViewController {
             bottomButton.setTitle("Switch to Sign Up", for: .normal)
         }else{
             signupMode = true
-            bottomButton.setTitle("Sign Up", for: .normal)
-            topButton.setTitle("Switch to Log In", for: .normal)
+            topButton.setTitle("Sign Up", for: .normal)
+            bottomButton.setTitle("Switch to Log In", for: .normal)
         }
     }
 }

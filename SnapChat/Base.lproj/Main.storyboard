@@ -21,12 +21,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ng-iQ-Fq1">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user@chat.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ng-iQ-Fq1">
                                 <rect key="frame" x="20" y="60" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsH-0A-NbU">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abc123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsH-0A-NbU">
                                 <rect key="frame" x="20" y="97" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -39,15 +39,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBG-2z-TM7">
-                                <rect key="frame" x="126.5" y="222" width="122" height="30"/>
+                                <rect key="frame" x="126.5" y="214" width="122" height="30"/>
                                 <state key="normal" title="Switch to Sign Up"/>
                                 <connections>
                                     <action selector="bottomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTI-xT-GGC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DS-uI-VoM">
-                                <rect key="frame" x="178" y="184" width="19" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="179" y="186" width="17" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -56,8 +56,8 @@
                         <constraints>
                             <constraint firstItem="8DS-uI-VoM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="01y-vN-FMF"/>
                             <constraint firstItem="1oP-n7-Gyz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2S-dK-rOz"/>
-                            <constraint firstItem="zBG-2z-TM7" firstAttribute="top" secondItem="8DS-uI-VoM" secondAttribute="bottom" constant="17" id="HeH-EX-jej"/>
-                            <constraint firstItem="8DS-uI-VoM" firstAttribute="top" secondItem="1oP-n7-Gyz" secondAttribute="bottom" constant="8" id="TtL-k7-PFc"/>
+                            <constraint firstItem="zBG-2z-TM7" firstAttribute="top" secondItem="8DS-uI-VoM" secondAttribute="bottom" constant="10" id="HeH-EX-jej"/>
+                            <constraint firstItem="8DS-uI-VoM" firstAttribute="top" secondItem="1oP-n7-Gyz" secondAttribute="bottom" constant="10" id="TtL-k7-PFc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ng-iQ-Fq1" secondAttribute="trailing" constant="20" id="UMX-rF-q5C"/>
                             <constraint firstItem="CsH-0A-NbU" firstAttribute="top" secondItem="6ng-iQ-Fq1" secondAttribute="bottom" constant="3" id="WP6-Yt-7JU"/>
                             <constraint firstItem="6ng-iQ-Fq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X9A-AP-lkk"/>
