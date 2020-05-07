@@ -78,11 +78,65 @@
                         <outlet property="emailTextField" destination="6ng-iQ-Fq1" id="6Wa-AT-IWQ"/>
                         <outlet property="passwordTextField" destination="CsH-0A-NbU" id="gf4-MI-1vg"/>
                         <outlet property="topButton" destination="1oP-n7-Gyz" id="Z6N-F0-wDt"/>
+                        <segue destination="CkA-RM-A6W" kind="presentation" identifier="moveToSnaps" id="2a4-rg-iNW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="94"/>
+        </scene>
+        <!--Snaps-->
+        <scene sceneID="xSp-c9-KuN">
+            <objects>
+                <tableViewController id="aDV-SI-PTo" customClass="SnapsTableViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k5T-aX-VBS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="XgE-aN-xQU">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XgE-aN-xQU" id="Udp-ao-utr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aDV-SI-PTo" id="SCY-24-YLV"/>
+                            <outlet property="delegate" destination="aDV-SI-PTo" id="zfZ-ow-xsw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Snaps" id="bIb-ep-iUg">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="Wo9-Kn-uQh">
+                            <connections>
+                                <action selector="logOutTapped:" destination="aDV-SI-PTo" id="kMc-V8-snh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EID-Ov-fTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.4000000000001" y="93.103448275862078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JjW-5c-Ndh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CkA-RM-A6W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZtZ-06-L0q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aDV-SI-PTo" kind="relationship" relationship="rootViewController" id="Jae-xB-O0B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fT3-XZ-JHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="92.203898050974516"/>
         </scene>
     </scenes>
 </document>

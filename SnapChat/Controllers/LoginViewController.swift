@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
                             self.presentAlert(alert: error.localizedDescription)
                         } else {
                             print("Sign up was succesful")
+                            self.performSegue(withIdentifier: "moveToSnaps", sender: nil)
                         }
                     })
                 }else{
@@ -43,6 +44,7 @@ class LoginViewController: UIViewController {
                             self.presentAlert(alert: error.localizedDescription)
                         } else {
                             print("Log in was succesful")
+                            self.performSegue(withIdentifier: "moveToSnaps", sender: nil)
                         }
                         
                     })
